@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Sienarfont";
+  src: local("Sienarfont"),
+    url("../fonts/SienarAFChariot.otf") format("opentype");
+  font-display: swap;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+video {
+  /* override other styles to make responsive */
+  /* max-width: 100% !important; */
+  height: auto !important;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
