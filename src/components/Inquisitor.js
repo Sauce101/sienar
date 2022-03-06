@@ -1,7 +1,5 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Inquisitors from "../assets/videos/inquiz.mp4"
-import Posterboy from "../assets/images/inquisitor/av1-guarded.webp"
 
 import { Grid, Paper } from "@mui/material"
 
@@ -28,17 +26,14 @@ const Inquisitor = () => {
           />
         </Paper>
       </Grid>
+
       <Grid item xs={12}>
-        <Paper sx={{ p: 4 }}>
-          <video
-            controls
-            poster={Posterboy}
-            disablePictureInPicture
-            controlsList="nodownload"
-          >
-            <source src={Inquisitors} type="video/mp4" />
-            <track kind="captions" srcLang="en" />
-          </video>
+        <Paper sx={{ p: 2 }}>
+          <StaticImage
+            src="../assets/images/inquisitor/av1-guarded.webp"
+            alt="tie inquisitor hangar"
+            layout="fullWidth"
+          />
         </Paper>
       </Grid>
     </Grid>
