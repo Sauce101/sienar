@@ -1,6 +1,6 @@
 import * as React from "react"
-import "../assets/css/main.css"
 import CssBaseline from "@mui/material/CssBaseline"
+import "../assets/css/main.css"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
