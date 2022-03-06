@@ -3,6 +3,7 @@ import logo from "../assets/images/logoWhite.png"
 
 import DrawerComp from "./DrawerComp"
 import useTheme from "@mui/material/styles/useTheme"
+import useMediaQuery from "@mui/material/useMediaQuery"
 import {
   AppBar,
   Box,
@@ -10,7 +11,6 @@ import {
   Link,
   Toolbar,
   Typography,
-  useMediaQuery,
 } from "@mui/material"
 
 const PAGES = [
@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <>
       <Box>
-        <AppBar position="relative" color="secondary">
+        <AppBar position="static" color="secondary">
           <Toolbar>
             <Link href="/">
               <IconButton>
