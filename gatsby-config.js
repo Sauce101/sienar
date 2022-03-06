@@ -56,8 +56,8 @@ module.exports = {
           google: [
             {
               family: "Roboto",
-              variants: ["100", "300", "400", "500", "700", "900"],
-              //fontDisplay: 'swap',
+              variants: ["300", "400", "500", "700"],
+              fontDisplay: "swap",
             },
           ],
         },

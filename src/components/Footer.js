@@ -6,7 +6,11 @@ export default function Footer() {
     <AppBar position="static" color="secondary" className="foot">
       <Container maxWidth="md" sx={{ mt: "auto" }}>
         <Toolbar>
-          <Typography variant="body1" color="inherit" sx={{ mx: "auto" }}>
+          <Typography
+            variant="body1"
+            color="inherit"
+            sx={{ mx: "auto", fontFamily: "Sienarfont" }}
+          >
             &copy; 2022 Michael Saucedo
           </Typography>
         </Toolbar>

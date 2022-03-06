@@ -1,8 +1,10 @@
 @font-face {
   font-family: "Sienarfont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
   src: local("Sienarfont"),
     url("../fonts/SienarAFChariot.otf") format("opentype");
-  font-display: swap;
 }
 
 body {

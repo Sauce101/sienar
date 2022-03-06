@@ -16,7 +16,7 @@ export default function HeroSection() {
             src="../assets/images/mobile/pilot-iphone.jpg"
             alt="tie pilot"
             layout="fullWidth"
-            placeholder="tracedSVG"
+            // placeholder="tracedSVG"
           />
         </>
       ) : (
@@ -25,7 +25,7 @@ export default function HeroSection() {
             src="../assets/images/tp-hero.jpg"
             alt="tie pilot"
             layout="fullWidth"
-            placeholder="tracedSVG"
+            // placeholder="tracedSVG"
           />
         </>
       )}

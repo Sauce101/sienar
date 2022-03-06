@@ -1,16 +1,7 @@
 import React from "react"
-// import { styled } from "@mui/material/styles"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Box, Typography, Grid, Paper } from "@mui/material"
-
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: "center",
-//   color: theme.palette.text.secondary,
-// }))
 
 const Fighter = () => {
   return (
