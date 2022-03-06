@@ -9,7 +9,6 @@ import {
   ListItemText,
   Drawer,
   IconButton,
-  Typography,
 } from "@mui/material"
 
 const PAGES = [
@@ -35,7 +34,6 @@ const DrawerComp = () => {
                 variant="h6"
                 underline="hover"
                 sx={{ color: "secondary.main" }}
-                // style={{ textDecoration: "none" }}
               >
                 <ListItemIcon
                   //
@@ -43,26 +41,12 @@ const DrawerComp = () => {
                   //
                 >
                   <ListItemText
-                    disableTypography
-                    primary={
-                      <Typography
-                        variant="body2"
-                        style={{
-                          textTransform: "uppercase",
-                          fontFamily: "Sienarfont",
-                          color: "#secondary.main",
-                        }}
-                      >
-                        {page}
-                      </Typography>
-                    }
-                    // sx={{
-                    //   textTransform: "uppercase",
-                    //   color: "secondary.main",
-                    //   fontFamily: "Sienarfont",
-                    // }}
+                    sx={{
+                      textTransform: "uppercase",
+                      color: "secondary.main",
+                    }}
                   >
-                    {/* {page} */}
+                    {page}
                   </ListItemText>
                 </ListItemIcon>
               </Link>

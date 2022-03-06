@@ -10,38 +10,11 @@ import tb4 from "../assets/images/bomber/tb4.jpg"
 import tb5 from "../assets/images/bomber/tb5.jpg"
 import tb6 from "../assets/images/bomber/tb6.jpg"
 
+const PAGES = [tb1, tb2, tb3, tb4, tb5, tb6]
+
 const Bomber = () => {
   return (
     <Grid container>
-      <Grid item xs={12} sm={6}>
-        <Paper sx={{ p: 2 }}>
-          <Card>
-            <CardMedia component="img" src={tb1} alt="tie bomber" />
-          </Card>
-        </Paper>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Paper sx={{ p: 2 }}>
-          <Card>
-            <CardMedia component="img" src={tb2} alt="tie bomber" />
-          </Card>
-        </Paper>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Paper sx={{ p: 2 }}>
-          <Card>
-            <CardMedia component="img" src={tb3} alt="tie bomber" />
-          </Card>
-        </Paper>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Paper sx={{ p: 2 }}>
-          <Card>
-            <CardMedia component="img" src={tb4} alt="tie bomber" />
-          </Card>
-        </Paper>
-      </Grid>
-
       <Grid item xs={12}>
         <Paper sx={{ p: 2 }}>
           <StaticImage
@@ -52,20 +25,15 @@ const Bomber = () => {
         </Paper>
       </Grid>
 
-      <Grid item xs={12} sm={6}>
-        <Paper sx={{ p: 2 }}>
-          <Card>
-            <CardMedia component="img" src={tb5} alt="tie bomber" />
-          </Card>
-        </Paper>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Paper sx={{ p: 2 }}>
-          <Card>
-            <CardMedia component="img" src={tb6} alt="tie bomber" />
-          </Card>
-        </Paper>
-      </Grid>
+      {PAGES.map((page, index) => (
+        <Grid item xs={12} sm={6} key={index}>
+          <Paper sx={{ p: 2 }}>
+            <Card>
+              <CardMedia component="img" src={page} alt="tie bomber" />
+            </Card>
+          </Paper>
+        </Grid>
+      ))}
     </Grid>
   )
 }

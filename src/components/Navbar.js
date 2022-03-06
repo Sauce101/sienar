@@ -40,10 +40,8 @@ const Navbar = () => {
               <>
                 <Typography
                   sx={{
-                    // fontSize: "1.5rem",
-                    fontSize: "2rem",
+                    fontSize: "1.5rem",
                     paddingLeft: 2,
-                    fontFamily: "Sienarfont",
                     color: "#fff",
                   }}
                 >
@@ -63,7 +61,6 @@ const Navbar = () => {
                       sx={{
                         marginLeft: "20px",
                         color: "white",
-                        fontFamily: "Sienarfont",
                         textTransform: "uppercase",
                       }}
                     >
