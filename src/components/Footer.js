@@ -7,7 +7,7 @@ export default function Footer() {
       <Container maxWidth="md" sx={{ mt: "auto" }}>
         <Toolbar>
           <Typography
-            variant="body1"
+            variant="body2"
             color="inherit"
             sx={{ mx: "auto", fontFamily: "Sienarfont" }}
           >
