@@ -2,8 +2,6 @@ import React from "react"
 import logo from "../assets/images/logoWhite.png"
 
 import DrawerComp from "./DrawerComp"
-import useTheme from "@mui/material/styles/useTheme"
-import useMediaQuery from "@mui/material/useMediaQuery"
 import {
   AppBar,
   Box,
@@ -23,47 +21,6 @@ const PAGES = [
 ]
 
 const Navbar = () => {
-  const theme = useTheme()
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"))
-
-  let tbWide
-  if (isMatch) {
-    tbWide = (
-      <>
-        <Typography
-          sx={{
-            fontSize: "1.5rem",
-            paddingLeft: 2,
-            color: "#fff",
-          }}
-        >
-          SIENAR
-        </Typography>
-        <DrawerComp />
-      </>
-    )
-  } else {
-    tbWide = (
-      <Box sx={{ marginLeft: "auto" }}>
-        {PAGES.map((page, index) => (
-          <Link
-            variant="h6"
-            href={`/${page}`}
-            key={index}
-            underline="hover"
-            sx={{
-              marginLeft: "20px",
-              color: "white",
-              textTransform: "uppercase",
-            }}
-          >
-            {page}
-          </Link>
-        ))}
-      </Box>
-    )
-  }
-
   return (
     <>
       <Box>
@@ -74,7 +31,36 @@ const Navbar = () => {
                 <img src={logo} alt="company logo" height="60px" width="40px" />
               </IconButton>
             </Link>
-            {tbWide}
+            <>
+              <Typography
+                className="hamburger"
+                sx={{
+                  fontSize: "1.5rem",
+                  paddingLeft: 2,
+                  color: "#fff",
+                }}
+              >
+                SIENAR
+              </Typography>
+              <DrawerComp className="hamburger" />
+            </>
+            <Box className="noHamburger " sx={{ marginLeft: "auto" }}>
+              {PAGES.map((page, index) => (
+                <Link
+                  variant="h6"
+                  href={`/${page}`}
+                  key={index}
+                  underline="hover"
+                  sx={{
+                    marginLeft: "20px",
+                    color: "white",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {page}
+                </Link>
+              ))}
+            </Box>
           </Toolbar>
         </AppBar>
       </Box>

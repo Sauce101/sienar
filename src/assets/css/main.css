@@ -23,3 +23,15 @@ video {
   margin-right: auto;
   width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .noHamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .hamburger {
+    display: none;
+  }
+}

@@ -58,7 +58,7 @@ const DrawerComp = () => {
         sx={{ color: "white", marginLeft: "auto" }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <MenuIcon />
+        <MenuIcon className="hamburger" />
       </IconButton>
     </>
   )
