@@ -1,7 +1,7 @@
 import React from "react"
-import Defender from "../components/Defender"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
+import Defender from "../components/Defender"
 
 const advanced = () => {
   return (

@@ -1,10 +1,9 @@
-import * as React from "react"
-import { Box } from "@mui/material"
-
+import React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import HeroSection from "../components/HeroSection"
 import Ships from "../components/Ships"
+import { Box } from "@mui/material"
 
 const IndexPage = () => (
   <Layout>
