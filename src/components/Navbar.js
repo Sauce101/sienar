@@ -42,7 +42,9 @@ const Navbar = () => {
               >
                 SIENAR
               </Typography>
-              <DrawerComp className="hamburger" />
+              <Box className="hamburger" sx={{ marginLeft: "auto" }}>
+                <DrawerComp className="hamburger" />
+              </Box>
             </>
             <Box className="noHamburger " sx={{ marginLeft: "auto" }}>
               {PAGES.map((page, index) => (
