@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import useMediaQuery from "@mui/material/useMediaQuery"
 import useTheme from "@mui/material/styles/useTheme"
+import { Box } from "@mui/material"
 import Ships from "./Ships"
 
 export default function HeroSection() {
@@ -12,25 +13,25 @@ export default function HeroSection() {
   return (
     <>
       {isMatch ? (
-        <>
+        <Box>
           <StaticImage
-            src="../assets/images/mobile/pilot-iphone.jpg"
+            src="../assets/images/mobile/pilot1920.jpg"
             alt="tie pilot"
             layout="fullWidth"
-            // placeholder="tracedSVG"
+            style={{ height: "100vh" }}
           />
-        </>
+          <Ships />
+        </Box>
       ) : (
-        <>
+        <Box>
           <StaticImage
             src="../assets/images/tp-hero.jpg"
             alt="tie pilot"
             layout="fullWidth"
-            // placeholder="tracedSVG"
           />
-        </>
+          <Ships />
+        </Box>
       )}
-      <Ships />
     </>
   )
 }
