@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import useMediaQuery from "@mui/material/useMediaQuery"
 import useTheme from "@mui/material/styles/useTheme"
+import Ships from "./Ships"
 
 export default function HeroSection() {
   const theme = useTheme()
@@ -29,6 +30,7 @@ export default function HeroSection() {
           />
         </>
       )}
+      <Ships />
     </>
   )
 }

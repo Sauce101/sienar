@@ -10,7 +10,7 @@ import tb4 from "../assets/images/bomber/tb4.jpg"
 import tb5 from "../assets/images/bomber/tb5.jpg"
 import tb6 from "../assets/images/bomber/tb6.jpg"
 
-const PAGES = [tb1, tb2, tb3, tb4, tb5, tb6]
+const PICS = [tb1, tb2, tb3, tb4, tb5, tb6]
 
 const Bomber = () => {
   return (
@@ -24,12 +24,11 @@ const Bomber = () => {
           />
         </Paper>
       </Grid>
-
-      {PAGES.map((page, index) => (
+      {PICS.map((pic, index) => (
         <Grid item xs={12} sm={6} key={index}>
           <Paper sx={{ p: 2 }}>
             <Card>
-              <CardMedia component="img" src={page} alt="tie bomber" />
+              <CardMedia component="img" src={pic} alt="tie bomber" />
             </Card>
           </Paper>
         </Grid>
