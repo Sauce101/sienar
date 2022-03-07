@@ -5,6 +5,7 @@ module.exports = {
     author: `Michael Saucedo`,
   },
   plugins: [
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -15,7 +16,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-image`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,25 +29,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Sienar Fleet Systems`,
-        short_name: `Sienar`,
-        start_url: `/`,
-        background_color: `#171717`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        theme_color: `#a5372a`,
-        orientation: `any`,
-        display: `standalone`,
-        icon: `src/assets/favicon/sienar.png`, // This path is relative to the root of the site.
-        icon_options: {
-          purpose: `any maskable`,
-        },
-        description: `TIE Starfigter fan page app`,
       },
     },
     {
@@ -63,9 +45,25 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        short_name: `Sienar`,
+        name: `Sienar Fleet Systems`,
+        icon: `src/assets/favicon/sienar.png`, // This path is relative to the root of the site.
+        icon_options: {
+          purpose: `any maskable`,
+        },
+        id: `/`,
+        start_url: `/`,
+        background_color: `#171717`,
+        display: `standalone`,
+        scope: `/`,
+        theme_color: `#a5372a`,
+        orientation: `any`,
+        description: `TIE Starfigter fan page app`,
+      },
+    },
     {
       resolve: `gatsby-plugin-offline`,
       options: {
