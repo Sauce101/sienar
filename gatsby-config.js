@@ -41,7 +41,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#a5372a`,
         orientation: `any`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/assets/favicon/sienar.png`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `any maskable`,
