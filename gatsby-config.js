@@ -54,7 +54,6 @@ module.exports = {
         icon_options: {
           purpose: `any maskable`,
         },
-        id: `/`,
         start_url: `/`,
         background_color: `#171717`,
         display: `standalone`,
