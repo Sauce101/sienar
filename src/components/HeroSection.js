@@ -11,7 +11,7 @@ export default function HeroSection() {
         <StaticImage
           src="../assets/images/mobile/pilot1920.jpg"
           alt="tie pilot"
-          placeholder="blurred"
+          placeholder="tracedSVG"
           layout="fullWidth"
           style={{ height: "100vh" }}
         />
