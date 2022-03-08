@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <>
       {isMatch ? (
-        <Box>
+        <Box className="pilotMobile">
           <StaticImage
             src="../assets/images/mobile/pilot1920.jpg"
             alt="tie pilot"
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <Ships />
         </Box>
       ) : (
-        <Box>
+        <Box className="pilotDesk">
           <StaticImage
             src="../assets/images/tp-hero.jpg"
             alt="tie pilot"
