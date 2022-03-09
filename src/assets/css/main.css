@@ -47,3 +47,7 @@ video {
     display: none;
   }
 }
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+}

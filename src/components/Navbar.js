@@ -26,7 +26,7 @@ const Navbar = () => {
       <Box>
         <AppBar position="static" color="secondary">
           <Toolbar>
-            <Link href="/">
+            <Link href="/" className="noSelect">
               <IconButton>
                 <img src={logo} alt="company logo" height="60px" width="40px" />
               </IconButton>
