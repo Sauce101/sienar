@@ -48,7 +48,7 @@ video {
   }
 }
 
-.noSelect {
+/* .noSelect {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -59,4 +59,4 @@ video {
 }
 .noSelect:focus {
   outline: none !important;
-}
+} */
