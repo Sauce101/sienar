@@ -36,6 +36,15 @@ const Inquisitor = () => {
           />
         </Paper>
       </Grid>
+      <Grid item xs={12}>
+        <Paper sx={{ p: 2 }}>
+          <StaticImage
+            src="../assets/images/inquisitor/EmpireDay.webp"
+            alt="tie inquisitor empire day"
+            layout="fullWidth"
+          />
+        </Paper>
+      </Grid>
     </Grid>
   )
 }
