@@ -50,7 +50,7 @@ module.exports = {
       options: {
         short_name: `Sienar`,
         name: `Sienar Fleet Systems`,
-        icon: `src/assets/favicon/sienar.png`, // This path is relative to the root of the site.
+        icon: `src/assets/favicon/maskable.png`,
         icon_options: {
           purpose: `any maskable`,
         },
