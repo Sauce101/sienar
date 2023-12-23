@@ -7,6 +7,15 @@ import Footer from "./Footer"
 import { createTheme, ThemeProvider } from "@mui/material"
 
 const theme = createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        html: {
+          "-webkit-tap-highlight-color": "transparent !important",
+        },
+      },
+    },
+  },
   palette: {
     background: {
       default: "#eeeeee",
